@@ -52,7 +52,7 @@ public class WebSecurityConfig {
                 .requestMatchers("/status", "/v2/api-docs", "/swagger-ui/**", "/images/**", "/api/join", "/api/login","/restaurants").permitAll()
                 .requestMatchers("/restaurant/**").authenticated()
 //				.anyRequest().authenticated()                
-                .anyRequest().permitAll()
+//                .anyRequest().permitAll()
 //                .and()
 //                .addFilterBefore(tokenAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
                 .and()
